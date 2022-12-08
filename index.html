@@ -14,34 +14,308 @@
     <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
     <li><a href="#tags">Falando sobre Tags</a></li>
     <li><a href="#atributos">Atritubo das Tags</a></li>
-    <li><a href="#textos">Tags de textos</a></li>
+    <li><a href="#textos">Efeitos e formatações em textos</a></li>
     <li><a href="#listas">Listas</a></li>
     <li><a href="#links">Links</a></li>
     <li><a href="#referencias">Referências e fontes</a></li>
   </ul>
+
   <h2 id="estrutura">Estrutura Básica do HTML</h2>
-  <a href="#inicio">Voltar</a>
+  <a href="#inicio"><small>Voltar</small></a>
+  <p>
+    HTML é uma linguagem de marcação de hipertexto <i>(HiperText Markup Language)</i> utilizada na construção de páginas na Web. O HTML permite inserir conteúdo e estabelecer uma estutura básica de um website. Atualmente utilizamos a <strong>versão 5</strong> do HTML.
+  </p>
+
+  <p>
+    A estutura básica de um documento HTML, deve conter uma declaração <strong><mark>< !DOCTYPE html></mark></strong>, segue abaixo a estrutura com as definições:
+  </p>
+
+  <ol>
+    <li>
+      <h3><u>html</u></h3>
+      <p>
+        É iniciada após do DOCTYPE e fechada ao final do documento.
+      </p>
+    </li>
+    <li>
+      <h3><u>head</u></h3>
+      <p>
+        É um elemento que receberá as informações básicas da página, como o título, metadados, links de elementos exeternos e etc. São dados implícitos e dentro dela, necessária presença do title. Podemos configurar também qual será a codificação que iremos utilizar no documento, por meio do charset UTF-8.
+      </p>
+    </li>
+    <li>
+      <h3><u>title</u></h3>
+      <p>
+        É onde escrevemos o título do website, fica escrito na aba do navegador.
+      </p>
+    <li>
+      <h3><u>body</u></h3>
+      <p>
+        É o corpo do nosso documento, todos os elementos que serão renderizados no navegador, será através do body. Nele colocamos todo o texto, imagens, vídeos, etc. Dentro desse elemento, são declarados outras tags, como cabeçalhos, listas, rodapé, etc.
+      </p>
+    </li>
+  </ol>
 
   <h2 id="tags">Falando sobre Tags</h2>
-  <a href="#inicio">Voltar</a>
+  <a href="#inicio"><small>Voltar</small></a>
+  <p>
+    A tag é representada por sinal de menor e maior <i>" < > "</i>. São um conjunto de caracteres que formam um elemento. A maioria das tags HTML, são compostas por uma estrutura de abertura e fechamento, como <strong>< tag></strong> e <strong>< /tag></strong>.
+  </p>
+  <p>
+    Existem também outras <strong>tags</strong> que são de <strong>estrutura única</strong>, ou seja, não precisa de fechamento. Mas por convenção, representamos de uma forma parecida com a tag de fechamento:<strong> <mark> < tag /></mark></strong>.
+  </p>
 
+  <h3>Tipos de Tags</h3>
+  <ul>
+    <li>
+      <p>
+        <strong>< h1> Cabeçalho < /h1>:</strong> Tag para definir um título. Essas tags podem variar de 1 a 6, < h1>, < h2>, < h3>, < h4>, < h5> e < h6>. Abaixo temos uma sequencia dos tamanhos de h, começando pelo < h1> e finalizando com < h6>: 
+      </p>
+
+      <blockquote>
+        <p>
+          <h1>Exemplo de h1;</h1>
+        </p>
+        <p>
+          <h2>Exemplo de h2;</h2>          
+        </p>
+        <p>
+          <h3>Exemplo de h3;</h3>
+        </p>
+        <p>
+          <h4>Exemplo de h4;</h4>
+        </p>
+        <p>
+          <h5>Exemplo de h5;</h5>
+        </p>
+        <p>
+          <h6>Exemplo de h6.</h6>
+        </p>
+      </blockquote>
+    </li>
+    <li>
+      <p>
+        <strong>< p> Parágrafo < /p>:</strong> Tag para definir um parágrafo;
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>< a> Link < /a>:</strong> Tag de link. Dentro dessa tag, é necessário ter uma atribuição <i>"href="</i>, esse assunto será abordado no próximo tópico;
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>< ol> Lista ordenada < /ol>:</strong> Tag que define uma lista ordenada, ou seja, tem numeração;
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>< ul> Listas desordenadas < /ul>:</strong> Tag de listas desordenadas, elas aparecem com um ponto;
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>< h1> Cabeçalho < /h1>:</strong> Tag de cabeçalho;
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong>< h1> Cabeçalho < /h1>:</strong> Tag de cabeçalho;
+      </p>
+    </li>
+  </ul>
+  
   <h2 id="atributos">Atritubo das Tags</h2>
-  <a href="#inicio">Voltar</a>
+  <a href="#inicio"><small>Voltar</small></a>
+  <p>
+    Os atributos HTML são palavras (especiais) utilizadas dentro das tags de abertura. Através desses atributos, conseguimos aplicar uma classe, id, lang, style e etc. É possível ver na <font size="4"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Attributes" target="_blank">documentação</a> de HTML.</font>
+  </p>
+  <h3>Segue abaixo alguns exemplos:</h3>
+  <ul>
+     <li>
+      <p>
+        <strong><font size="4">< a <mark>hre=""</mark>></font>:</strong> Dentro do sinal de aspas "", é o local onde colocamos o endereço do website;
+      </p>
+    </li>
+    <li>
+      <p>
+        <strong><font size="4">< img <mark>src=""</mark>></font>:</strong> Dentro do sinal de aspas "", colocamos o local da imagem;
+      </p>
+  </ul>
 
-  <h2 id="textos">Tags de textos</h2>
-  <a href="#inicio">Voltar</a>
-
-  <h2 id="listas">Listas</h2>
-  <a href="#inicio">Voltar</a>
-
-  <h2 id="links">Links</h2>
-  <a href="#inicio">Voltar</a>
-
-  <h2 id="referencias">Referências e fontes</h2>
-  <a href="#inicio">Voltar</a>
+  <h2 id="textos">Efeitos e Formatações em Textos</h2>
+  <a href="#inicio"><small>Voltar</small></a>
+  <p> 
+    Alguns efeitos não são utilizados usualmente, porém, em alguns casos especiais, se faz necessário colocar alguma decoração ou efeito no texto. Essas tags servem para estilizar o seu conteúdo.
+  </p>
+  <h3>Segue abaixo alguns exemplos:</h3>
 
   <ul>
-    <li><a href="https://www.youtube.com/watch?v=sj0p9O85AIg&list=PL2Fdisxwzt_cajoGVWTx44wM6Ht09QJ3A&index=1" target="_blank">Curso de HTML Completo</a></li>
+    <li>
+      <p>
+        A tag < i> <i>dá um efeito em itálico </i> < /i>;
+      </p>
+    </li>
+    <li>
+      <p>
+        A tag < strong> <strong>dá um efeito em negrito </strong> < /strong>;
+      </p>
+    </li>
+    <li>
+      <p>
+        A tag < mark> <mark>dá um efeito de marcação </mark> < /mark>;
+      </p>
+    </li>
+    <li>
+      <p>
+        A tag < del> <del>dá um efeito de rabisco </del> < /del>;
+      </p>
+    </li>
+    <li>
+      <p>
+        A tag < sup> <sup>coloca o texto ou palavra na parte superior </sup> < /sup>;
+      </p>
+    </li>
+    <li>
+      <p>
+        A tag < sub> <sub>coloca o texto ou palavra na parte inferior </sub> < /sub>;
+      </p>
+    </li>
+    <li>
+      <p>
+        A tag de abreviação, < abbr> <abbr title="Rio de Janeiro">RJ</abbr> < /abbr> falcilitr o mecanismo de busca e sistema de tradução, podemos colocar um atributo <mark>title="Rio de Janeiro"</mark>, para que seja relevante nos navegadores. Ela dá o significado semântico a palavra do texto HTML.
+      </p>
+    </li>
+  </ul>
+
+  <h2 id="listas">Listas</h2>
+  <a href="#inicio"><small>Voltar</small></a>
+  <p>
+    São elementoss de textos de grande importância na criação de websites, esse modelo de organização, facilita o entendimento e cria uma boa experiência para o usário. Em alguns casos, se torna praticamente obrigatório, como no caso de uma receita culinária. 
+  </p>
+  <p>
+    Iremos abordar sobre <strong>itens</strong>, <strong>lista ordenada</strong> e <strong>lista desordenada</strong>.
+  </p>
+
+  <h3>Tag li</h3>
+  <p>
+    "li" significa <i><strong>list item</strong></i> em inglês. Essa tag < li> é usada para cada item da lista, ela possui abertura e fechamento, como: < li> e < /li>.
+  </p>
+
+  <h3>Listas ordenadas</h3>
+  <p> Essa tag é "ol" e significa <i><strong>ordered list</strong></i> em inglês. No exemplo abaixo, está sendo demonstrado a estrutura de uma lista ordenada com os itens:
+  </p>
+  
+  <p>  
+    <i>< ol></i>
+  </p>
+  
+  <p>
+    <blockquote>
+      <i> < li> elemento < /li></i>
+    </blockquote>
+  </p>
+
+  <p>
+    <i> < /ol></i>
+  </p>
+    
+ 
+  <ol>
+    <li>Elemento I</li>
+    <li>Elemento II</li>
+    <li>Elemento III</li>
+    <li>Elemento IV</li>
+  </ol>
+
+  <h3>Listas desordenadas</h3>
+  <p> Essa tag é "ul" e significa <i><strong>unordered list</strong></i> em inglês. No exemplo abaixo, está sendo demonstrado a estrutura de uma lista desordenada com os itens:
+  </p>
+
+   <p>  
+    <i>< ul></i>
+  </p>
+  
+  <p>
+    <blockquote>
+      <i> < li> elemento < /li></i>
+    </blockquote>
+  </p>
+
+  <p>
+    <i> < /ul></i>
+  </p>
+    
+  <ul>
+    <li>Elemento I</li>
+    <li>Elemento II</li>
+    <li>Elemento III</li>
+    <li>Elemento IV</li>
+  </ul>
+
+  <h2 id="links">Links</h2>
+  <a href="#inicio"><small>Voltar</small></a>
+  <p>
+    A tag link HTML é uma função que permite inserir hiperlinks em vários alguns elementos, como imagens e textos. O link precisa de um atributo <strong>href=""</strong>, pois é desta maneira que apontamos uma URL (endereço).
+  </p>
+  <p>
+    Ela é escrita da seguinte forma:
+  </p>
+    <blockquote>
+      < a href="https://web.dio.me/home"> <a href="https://web.dio.me/home">DIO</a> < /a>
+    </blockquote>
+
+  <h2>Atributo href</h2>
+
+  <p>
+    O atributo href tem o intuito de redirecionar o usuário a outro recurso ou documento. Existes 3 tipos de links utilizados para esse redirecionamento. Estes tipos são:
+  </p>
+  <ul>
+    <li>
+      <p>
+        <stron>Interno:</stron>Redireciona para um elemento dentro da mesma página;
+        <blockquote>
+          < a href="#contato"> Contato < /a>
+        </blockquote>
+      </p>
+    </li>
+    <li>
+      <p>
+        <stron>Local:</stron>Redireciona para um elemento dentro da mesma página;
+        <blockquote>
+          < a href="../pg/pagina2.html"> Pagina 2 < /a>
+        </blockquote>
+      </p>
+    </li>
+    <li>
+      <p>
+        <stron>Global:</stron>Redireciona para um elemento dentro da mesma página;
+        <blockquote>
+          < a href="http://www.google.com/"> Google < /a>
+        </blockquote>
+      </p>
+    </li>
+  </ul>
+
+  <h2 id="referencias">Referências e fontes</h2>
+  <a href="#inicio"><small>Voltar</small></a>
+  <ul>
+    <li>
+      <a href="https://www.youtube.com/watch?v=sj0p9O85AIg&list=PL2Fdisxwzt_cajoGVWTx44wM6Ht09QJ3A&index=2" target="_blank">Curso HTML</a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Attributes" target="_blank" target="_blank">Atributos</a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Elementos</a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Documentação tag lista</a>
+    </li>
+    <li>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Documentação tag link</a>
+    </li>
+    
   </ul>
 </body>
 
